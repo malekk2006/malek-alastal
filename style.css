@@ -5,6 +5,7 @@ body {
   direction: rtl;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .container {
@@ -14,23 +15,24 @@ body {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.container:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 35px rgba(255, 215, 0, 0.5);
+  animation: fadeIn 1.5s ease forwards;
 }
 
 .logo {
   display: block;
   margin: 0 auto 20px;
   width: 100px;
+  animation: slideDown 1s ease forwards;
 }
 
 h1, h2 {
   text-align: center;
   color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.glow-text {
+  text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
 }
 
 label {
@@ -48,6 +50,12 @@ input, textarea {
   border-radius: 5px;
   background-color: #222;
   color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 10px #FFD700;
+  outline: none;
 }
 
 button {
@@ -65,12 +73,6 @@ button {
 
 button:hover {
   background-color: #e6c200;
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(255,215,0, 0.7); }
-  70% { box-shadow: 0 0 0 10px rgba(255,215,0, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(255,215,0, 0); }
 }
 
 .social-footer {
@@ -96,4 +98,21 @@ button:hover {
 
 .social-icons img:hover {
   transform: rotate(15deg) scale(1.2);
+}
+
+/* أنيميشن */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255,215,0, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(255,215,0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,215,0, 0); }
 }
