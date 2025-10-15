@@ -1,9 +1,8 @@
 body {
   margin: 0;
   font-family: 'Cairo', sans-serif;
-  background-color: #0f172a;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #0ea5e9);
   color: #f1f5f9;
-  overflow-x: hidden;
   direction: rtl;
 }
 
@@ -11,38 +10,35 @@ header {
   background-color: #1e293b;
   padding: 1rem;
   text-align: center;
+  box-shadow: 0 0 10px #0ea5e9;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 nav a {
-  margin: 0 1rem;
   color: #38bdf8;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
   color: #0ea5e9;
 }
 
-.background-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #0f172a, #1e293b, #0ea5e9);
-  z-index: -1;
-  opacity: 0.3;
-}
-
 .container {
   max-width: 800px;
-  margin: auto;
+  margin: 2rem auto;
   padding: 2rem;
-  text-align: center;
   background-color: rgba(30, 41, 59, 0.85);
   border-radius: 12px;
   box-shadow: 0 0 20px #0ea5e9;
+  text-align: center;
 }
 
 h1, h2 {
@@ -88,18 +84,55 @@ button:hover {
   background-color: #2563eb;
 }
 
-.note {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: #94a3b8;
-}
-
 .icons {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .icons a {
   background-color: #1e293b;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #f1f5f9;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.icons a:hover {
+  background-color: #0ea5e9;
+}
+
+.icons i {
+  font-size: 1.2rem;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease forwards;
+  opacity: 0;
+}
+
+.slide-in {
+  animation: slideIn 2s ease forwards;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
