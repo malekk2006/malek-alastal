@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>تسجيل دورة الأمن السيبراني - Malek Alastal</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>دورة الأمن السيبراني</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="hero">
-    <div class="character"></div>
-    <div class="form-card">
-      <img src="logo.png" alt="شعار الدورة" class="logo" />
-      <h1>مرحبًا بك في دورة الأمن السيبراني</h1>
-      <form action="https://formsubmit.co/malekalastal813@gmail.com" method="POST" id="registrationForm">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
+  <div class="container">
+    <header class="fade-in">
+      <h1>🚀 دورة الأمن السيبراني</h1>
+      <p>انطلق نحو مستقبل آمن رقميًا</p>
+    </header>
 
-        <label>الاسم الكامل (بالعربي):</label>
-        <input type="text" name="الاسم الكامل بالعربي" required />
+    <section class="info slide-up">
+      <h2>📘 معلومات الدورة</h2>
+      <ul>
+        <li>المدة: 4 أسابيع</li>
+        <li>الطريقة: أونلاين عبر Zoom</li>
+        <li>الشهادة: معتمدة دوليًا</li>
+      </ul>
+    </section>
 
-        <label>Full Name (English):</label>
-        <input type="text" name="Full Name (English)" required />
-
-        <label>رقم الواتساب:</label>
-        <input type="text" name="رقم الواتساب" required />
-
-        <label>مستواك في البرمجة:</label>
-        <select name="مستوى البرمجة" required>
-          <option value="">اختر المستوى</option>
-          <option value="مبتدئ">مبتدئ</option>
-          <option value="متوسط">متوسط</option>
-          <option value="متقدم">متقدم</option>
-        </select>
-
-        <label>من أين أنت؟</label>
-        <input type="text" name="المدينة / الدولة" required />
-
-        <button type="submit">إرسال التسجيل</button>
+    <section class="form bounce-in">
+      <h2>📝 نموذج التسجيل</h2>
+      <form id="registerForm">
+        <input type="text" name="name" placeholder="الاسم الكامل" required>
+        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+        <input type="tel" name="phone" placeholder="رقم الهاتف">
+        <button type="submit">سجّل الآن</button>
       </form>
-      <a href="contact.html" class="contact-link">📞 صفحة التواصل</a>
-    </div>
+      <p id="successMessage" class="hidden">✅ تم التسجيل بنجاح!</p>
+    </section>
+
+    <footer class="fade-in">
+      <p>© 2025 جميع الحقوق محفوظة. دورة الأمن السيبراني.</p>
+    </footer>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
