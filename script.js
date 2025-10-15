@@ -1,4 +1,4 @@
-document.getElementById("registerForm").addEventListener("submit", function(e) {
+document.getElementById("registrationForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
   const formData = new FormData(this);
@@ -9,8 +9,7 @@ document.getElementById("registerForm").addEventListener("submit", function(e) {
     location: formData.get("location")
   };
 
-  // إرسال البيانات إلى البريد (ممكن تستخدم Formspree أو Google Apps Script)
-  console.log("تم إرسال البيانات:", data);
+  console.log("Submitted:", data);
 
   document.getElementById("successMessage").classList.remove("hidden");
   this.reset();
