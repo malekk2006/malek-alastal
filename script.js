@@ -1,3 +1,5 @@
-document.getElementById("registrationForm").addEventListener("submit", function () {
-  alert("تم إرسال التسجيل بنجاح! سيتم التواصل معك قريبًا.");
+document.getElementById("registerForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  document.getElementById("successMessage").classList.remove("hidden");
+  this.reset();
 });
