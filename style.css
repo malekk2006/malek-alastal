@@ -8,13 +8,13 @@
 
 body {
   font-family: 'Cairo', sans-serif;
-  background: linear-gradient(135deg, #000000, #1a1a1a);
+  background: linear-gradient(120deg, #ffffff, #e0f7fa, #f3e5f5);
   background-size: 400% 400%;
   animation: gradientShift 20s ease infinite;
-  color: #f1f1f1;
+  color: #1e293b;
   direction: rtl;
-  min-height: 100vh;
   overflow-x: hidden;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -34,10 +34,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
   padding: 1rem 0;
-  box-shadow: 0 0 10px #ff3c3c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -47,7 +47,7 @@ nav {
 }
 
 nav a {
-  color: #ff3c3c;
+  color: #0288d1;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
@@ -55,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ff6b6b;
+  color: #01579b;
 }
 
 /* الحاوية */
@@ -68,10 +68,10 @@ nav a:hover {
 
 /* البطاقة */
 .card {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(12px);
   border-radius: 16px;
-  box-shadow: 0 0 30px rgba(255, 60, 60, 0.3);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
   padding: 2rem;
   animation: slideFade 1.5s ease forwards;
 }
@@ -79,15 +79,14 @@ nav a:hover {
 /* العناوين */
 h1 {
   font-size: 2rem;
-  color: #ff3c3c;
+  color: #0288d1;
   margin-bottom: 1rem;
-  text-shadow: 0 0 10px #ff3c3c;
   animation: slideDown 1.5s ease forwards;
 }
 
 h2 {
   font-size: 1.5rem;
-  color: #ff6b6b;
+  color: #01579b;
   margin-bottom: 1rem;
   animation: slideUp 1.5s ease forwards;
 }
@@ -97,62 +96,6 @@ p {
   font-size: 1.1rem;
   line-height: 1.6;
   animation: fadeInText 2s ease forwards;
-}
-
-/* النموذج */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.form-group {
-  text-align: right;
-}
-
-label {
-  display: block;
-  margin-bottom: 0.3rem;
-  color: #ff3c3c;
-  font-weight: bold;
-}
-
-input {
-  padding: 0.75rem;
-  border: 1px solid #ff3c3c;
-  background-color: #1a1a1a;
-  color: #f1f1f1;
-  border-radius: 8px;
-  font-size: 1rem;
-  transition: border 0.3s ease;
-}
-
-input:focus {
-  border-color: #ff6b6b;
-  outline: none;
-}
-
-/* الزر */
-button {
-  padding: 0.75rem;
-  background: linear-gradient(to right, #ff3c3c, #ff6b6b);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 15px #ff3c3c;
 }
 
 /* أيقونات التواصل */
@@ -165,23 +108,21 @@ button:hover {
 }
 
 .icons a {
-  background-color: #1a1a1a;
+  background-color: #0288d1;
   padding: 0.6rem 1.2rem;
   border-radius: 10px;
-  color: #f1f1f1;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  border: 1px solid #ff3c3c;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .icons a:hover {
-  background-color: #ff3c3c;
-  color: #000;
-  box-shadow: 0 0 10px #ff3c3c;
+  background-color: #01579b;
+  box-shadow: 0 0 10px #0288d1;
 }
 
 .icons i {
