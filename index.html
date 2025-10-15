@@ -1,51 +1,37 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>منصة مالك الأسطل للأمن السيبراني</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cybersecurity Course Registration</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="overlay"></div>
+  <div class="background-overlay"></div>
+
   <div class="container">
-    <header class="fade-in">
-      <img src="logo.png" alt="شعار الدورة" class="logo">
-      <h1>منصة الأمن السيبراني</h1>
-      <p>بإشراف مالك الأسطل وعبد الحميد البيوك</p>
-    </header>
+    <div class="left-panel fade-in">
+      <h1>Welcome!</h1>
+      <p>Please fill in your details to register for the Cybersecurity Course.</p>
+      <a href="#" class="signup-btn">Learn More</a>
+    </div>
 
-    <section class="team slide-up">
-      <h2>فريق الإشراف</h2>
-      <div class="card">
-        <h3>مالك الأسطل</h3>
-        <p>مبرمج ومشرف الدورة</p>
-        <p>📱 واتس: +972598561044</p>
-        <p>📸 انستا: <a href="https://www.instagram.com/malek.ramy.alastal" target="_blank">malek.ramy.alastal</a></p>
-      </div>
-      <div class="card">
-        <h3>عبد الحميد البيوك</h3>
-        <p>مشرف التواصل والتسجيل</p>
-        <p>📱 واتس: +972567703915</p>
-        <p>📸 انستا: <a href="https://www.instagram.com/q5_1999" target="_blank">@q5_1999</a></p>
-      </div>
-    </section>
-
-    <section class="form bounce-in">
-      <h2>📝 نموذج التسجيل</h2>
-      <form id="registerForm">
-        <input type="text" name="fullname" placeholder="الاسم الكامل" required>
-        <input type="tel" name="whatsapp" placeholder="رقم الواتس الحالي" required>
-        <input type="text" name="level" placeholder="مستواك في البرمجة" required>
-        <input type="text" name="location" placeholder="من أين أنت؟" required>
-        <button type="submit">سجّل الآن</button>
+    <div class="right-panel slide-in">
+      <h2>Register Now</h2>
+      <form id="registrationForm">
+        <input type="text" name="fullname" placeholder="Full Name" required />
+        <input type="tel" name="whatsapp" placeholder="WhatsApp Number" required />
+        <input type="text" name="level" placeholder="Programming Level" required />
+        <input type="text" name="location" placeholder="Where Are You From?" required />
+        <button type="submit">Submit</button>
       </form>
-      <p id="successMessage" class="hidden">✅ تم إرسال بياناتك بنجاح!</p>
-    </section>
-
-    <footer class="fade-in">
-      <p>© 2025 جميع الحقوق محفوظة لـ مالك الأسطل</p>
-    </footer>
+      <div class="contact-info">
+        <p>📧 malekalastal813@gmail.com</p>
+        <p>👨‍💻 Malek Alastal | WhatsApp: +972598561044 | IG: malek.ramy.alastal</p>
+        <p>📞 Abdul Hamid Al-Bayouk | WhatsApp: +972567703915 | IG: <a href="https://www.instagram.com/q5_1999" target="_blank">@q5_1999</a></p>
+      </div>
+      <p id="successMessage" class="hidden">✅ Your registration has been submitted!</p>
+    </div>
   </div>
 
   <script src="script.js"></script>
