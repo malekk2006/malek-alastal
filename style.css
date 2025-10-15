@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Cairo', sans-serif;
-  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  background: linear-gradient(to right, #1a1a1a, #000000);
   color: #fff;
   direction: rtl;
   overflow-x: hidden;
@@ -33,7 +33,7 @@ body {
   }
 }
 
-.form-container {
+.form-card, .contact-card {
   background-color: #222;
   padding: 30px;
   border-radius: 15px;
@@ -41,15 +41,15 @@ body {
   max-width: 500px;
   width: 100%;
   animation: fadeIn 2s ease forwards;
+  text-align: center;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+.logo {
+  width: 80px;
+  margin-bottom: 15px;
 }
 
 h1 {
-  text-align: center;
   color: #FFD700;
   margin-bottom: 20px;
 }
@@ -59,6 +59,7 @@ label {
   margin-top: 15px;
   font-weight: bold;
   color: #FFD700;
+  text-align: right;
 }
 
 input, select {
@@ -86,4 +87,21 @@ button {
 
 button:hover {
   background-color: #e6c200;
+}
+
+.contact-link, .back-link {
+  display: block;
+  margin-top: 20px;
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-link:hover, .back-link:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
