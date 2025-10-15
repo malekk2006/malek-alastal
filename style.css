@@ -7,6 +7,23 @@ body {
   direction: rtl;
 }
 
+header {
+  background-color: #1e293b;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0ea5e9;
+}
+
 .background-overlay {
   position: fixed;
   top: 0;
@@ -61,6 +78,10 @@ button {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 button:hover {
@@ -81,40 +102,4 @@ button:hover {
 }
 
 .icons a {
-  background-color: #22d3ee;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  color: #0f172a;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.icons a:hover {
-  background-color: #0ea5e9;
-}
-
-/* Animations */
-.fade-in {
-  animation: fadeIn 2s ease forwards;
-  opacity: 0;
-}
-
-.slide-in {
-  animation: slideIn 2s ease forwards;
-  transform: translateY(50px);
-  opacity: 0;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+  background-color: #1e293b;
