@@ -3,51 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>دورة الأمن السيبراني - Malek Alastal</title>
+  <title>تسجيل دورة الأمن السيبراني - Malek Alastal</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container fade-in">
-    <img src="logo.png" alt="شعار الدورة" class="logo slide-down" />
-    <h1 class="glow-text">دورة الأمن السيبراني</h1>
-    <h2 class="glow-text">تسجيل المشاركين - Malek Alastal</h2>
+  <div class="hero">
+    <div class="character"></div>
+    <div class="form-container">
+      <h1>تسجيل دورة الأمن السيبراني</h1>
+      <form action="https://formsubmit.co/malekalastal813@gmail.com" method="POST" id="registrationForm">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
 
-    <form action="https://formsubmit.co/malekalastal813@gmail.com" method="POST" id="registrationForm" class="form-animate">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
+        <label>الاسم الكامل (بالعربي):</label>
+        <input type="text" name="الاسم الكامل بالعربي" required />
 
-      <label for="name">الاسم الكامل:</label>
-      <input type="text" id="name" name="الاسم الكامل" required />
+        <label>Full Name (English):</label>
+        <input type="text" name="Full Name (English)" required />
 
-      <label for="whatsapp">رقم الواتساب:</label>
-      <input type="text" id="whatsapp" name="رقم الواتساب" required />
+        <label>رقم الواتساب:</label>
+        <input type="text" name="رقم الواتساب" required />
 
-      <label for="reason">لماذا شاركت معنا؟</label>
-      <textarea id="reason" name="سبب المشاركة" rows="4" required></textarea>
+        <label>كيف مستواك في البرمجة؟</label>
+        <select name="مستوى البرمجة" required>
+          <option value="">اختر المستوى</option>
+          <option value="مبتدئ">مبتدئ</option>
+          <option value="متوسط">متوسط</option>
+          <option value="متقدم">متقدم</option>
+        </select>
 
-      <button type="submit">إرسال التسجيل</button>
-    </form>
+        <label>من أين أنت؟</label>
+        <input type="text" name="المدينة / الدولة" required />
 
-    <footer class="social-footer fade-in">
-      <h3>تواصل معنا:</h3>
-      <div class="social-icons">
-        <a href="https://wa.me/972598561044" target="_blank" title="واتساب">
-          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
-        </a>
-        <a href="https://www.instagram.com/m.ram.2006" target="_blank" title="إنستغرام">
-          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
-        </a>
-        <a href="https://www.linkedin.com/in/malek-alastal" target="_blank" title="لينكدإن">
-          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
-        </a>
-        <a href="mailto:malekalastal813@gmail.com" target="_blank" title="البريد الإلكتروني">
-          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" />
-        </a>
-      </div>
-    </footer>
+        <button type="submit">إرسال التسجيل</button>
+      </form>
+    </div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
